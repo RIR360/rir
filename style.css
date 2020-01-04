@@ -2,10 +2,14 @@ body {
     margin: 0;
     background: rgb(65, 70, 73);
     font-family: sans-serif;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 * {
     box-sizing: border-box;
-    color: white;
     transition:  all ease 0.4s;
 }
 
@@ -21,6 +25,7 @@ body {
     overflow: auto;
     width: 100%;
     top: 0;
+    box-shadow: 0 5px 5px rgba(8, 8, 8, 0.5);
 }
 #navbar > * {
     display: inline-block;
@@ -45,6 +50,9 @@ body {
 #navbar li:hover {
     background: rgb(255, 255, 255);
 }
+#navbar li.active {
+    background: rgb(190, 195, 214);
+}
 #avatar img {
     height: 35px;
     border-radius: 50%;
@@ -53,11 +61,16 @@ body {
 #avatar {
     position: relative;
     cursor: pointer;
-    font-weight: bold;
 }
 main {
     margin-top: 55px;
     min-height: 100vh;
+}
+main div {
+    background: #d7dcf1;
+    border-radius: 8px;
+    color: black;
+    padding: 10px;
 }
 
 footer {
