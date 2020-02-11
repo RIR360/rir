@@ -14,44 +14,8 @@
 
     <main class="div">
         <div>
-            <h3>Generate Number C program</h3>
-            <pre>
-// generate bunch of random phone numbers
-
-#include<stdio.h>
-#include<stdlib.h>
-
-#define trunkPrefix 0
-
-int operators(int array);
-int extraNum();
-
-int main(void) {
-
-    int amount;
-
-    printf("Generate random contacts. Choose amount: ");
-    scanf("%d", &amount);
-
-    for(int i = 0; i < amount; i++) {
-        printf("%d%d%d%d%d%d%d%d%d%d, ", trunkPrefix, operators(rand()%7),
-        extraNum(), extraNum(), extraNum(), extraNum(),
-        extraNum(), extraNum(), extraNum(), extraNum());
-    }
-
-}
-
-int operators(int array) {
-
-    int operators[7] = {13, 14, 15, 16, 17, 18, 19};
-    return operators[array];
-
-}
-
-int extraNum() {
-    return rand()%9;
-}
-            </pre>
+            <h3>rir360 header file</h3>
+            <p>My header file <a href="https://github.com/RIR360/rir360-c-header/blob/master/rir360.h">rir360.h</a></p>
         </div>
     </main>
 
