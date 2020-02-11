@@ -1,13 +1,15 @@
 body {
     margin: 0;
-    background: rgb(65, 70, 73);
+    background: #070612;
     font-family: sans-serif;
-    animation: fadein 1s;
+    /*animation: fadein 1s;*/
 }
+/*
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+*/
 * {
     box-sizing: border-box;
     transition:  all ease 0.4s;
@@ -18,50 +20,101 @@ body {
 }
 
 /*----Navbar----*/
+#header {
+  background: #121121;
+  font-family: georgia;
+  position: fixed;
+  width: 100%;
+}
+#header * {
+  transition: ease all 0.3s;
+}
+#header .name a {
+  font-size: 25px;
+}
+#header .links, #header .name {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#header li {
+  display: inline-block;
+  padding: 10px;
+}
+.active-nav {
+  background: #e37302;
+}
+#header  a {
+  display: block;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: white;
+}
+#header ul a:hover {
+  border: 1px solid #a15100;
+}
+#header ul a:active {
+  background: #e37302;
+}
 
-#navbar {
-    background: #d7dcf1;
-    position: fixed;
-    overflow: auto;
-    width: 100%;
-    top: 0;
-    box-shadow: 0 5px 5px rgba(8, 8, 8, 0.5);
+#header .line {
+  height: 5px;
+  overflow: hidden;
 }
-#navbar > * {
-    display: inline-block;
+#header .line div {
+  position: absolute;
+  height: 5px;
+  width: 100px;
+  border-radius: 10px;
+
 }
-#navbar * {
-    color: black;
-    font-size: 17px;
-    text-decoration: none;
+#header .line div:nth-child(1) {
+  background: #e37302;
+  animation-timing-function: ease-in-out;
+  animation: line infinite 3s;
+  right: 0px;
 }
-#navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    float: right;
+#header .line div:nth-child(2) {
+  background: #e37302;
+  animation-timing-function: ease-in-out;
+  animation: line infinite 5s;
 }
-#navbar li {
-    display: inline-block;
-    padding: 7px;
-    border-radius: 5px;
-    cursor: pointer;
+
+@keyframes line {
+  0% {  
+  	left:  0%;
+ 	width: 10%;
+  }
+  50% {
+  	left:  50%;
+ 	width: 50%;
+  }
+  100% {
+  	left: 0%;
+ 	width: 10%;
+  }
 }
-#navbar li:hover {
-    background: rgb(255, 255, 255);
+
+@media only screen and (max-width: 432px) {
+    #header .links {
+        text-align: center;
+        display: block;
+    }
+    #header .links a {
+        padding: 5px 8px;
+    }
+    #header .name {
+        display: block;
+        text-align: center;
+    }
 }
-#navbar li.active {
-    background: rgb(190, 195, 214);
-}
-#avatar img {
-    height: 35px;
-    border-radius: 50%;
-    vertical-align: middle;
-}
-#avatar {
-    position: relative;
-    cursor: pointer;
-}
+
+/* header end */
+
 main {
     margin-top: 55px;
     min-height: 100vh;
@@ -72,6 +125,8 @@ main div {
     color: black;
     padding: 10px;
 }
+
+/* footer */
 
 footer {
     background: #d7dcf1;
