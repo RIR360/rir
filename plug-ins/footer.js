@@ -1,3 +1,3 @@
 document.write(`
-    <footer class="div">&copy;rir-2020</footer>
+    <footer class="div">&copy;copyright-rir2020</footer>
 `);
