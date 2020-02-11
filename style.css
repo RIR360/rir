@@ -121,9 +121,9 @@ main {
     min-height: 100vh;
 }
 main div {
-    background: #d7dcf1;
+    background: #0b091c;
     border-radius: 8px;
-    color: black;
+    color: white;
     padding: 10px;
 }
 
