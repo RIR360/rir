@@ -25,6 +25,7 @@ body {
   font-family: georgia;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 #header * {
   transition: ease all 0.3s;
