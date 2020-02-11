@@ -4,9 +4,9 @@ document.write(`
 	    <li><a href="#">Rizvy</a></li>
 	  </ul>
 	  <ul class="links">
-	    <li><a href="#" class="active-nav">Home</a></li>
-	    <li><a href="#">Files</a></li>
-	    <li><a href="#">Projects</a></li>
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="files.html">Files</a></li>
+	    <li><a href="projects.html">Projects</a></li>
 	  </ul>
 	<div class="line">
 		<div></div>
