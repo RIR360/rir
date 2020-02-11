@@ -129,8 +129,8 @@ main div {
 /* footer */
 
 footer {
-    background: #d7dcf1;
-    color: black;
+    background: #121121;
+    color: white;
 }
 
 
@@ -142,6 +142,6 @@ footer {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #d7dcf1;
+    background: #e37302;
     border-radius: 10px;
   }
