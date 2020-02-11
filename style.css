@@ -110,6 +110,9 @@ body {
         display: block;
         text-align: center;
     }
+    main {
+        margin-top: 110px;
+    }
 }
 
 /* header end */
