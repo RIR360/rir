@@ -134,15 +134,13 @@ footer {
     color: white;
 }
 
-
+/* scroll bar */
 /* width */
 ::-webkit-scrollbar {
     width: 6px;
-  }
-  
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #e37302;
-    border-radius: 10px;
-  }
+ }
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #e37302;
+border-radius: 10px;
+}
