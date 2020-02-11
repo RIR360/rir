@@ -98,24 +98,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 432px) {
-    #header .links {
-        text-align: center;
-        display: block;
-    }
-    #header .links a {
-        padding: 5px 8px;
-    }
-    #header .name {
-        display: block;
-        text-align: center;
-    }
-    
-    main {
-        margin-top: 110px;
-    }
-}
-
 /* header end */
 
 main {
@@ -140,6 +122,26 @@ main div {
 footer {
     background: #121121;
     color: white;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 432px) {
+    #header .links {
+        text-align: center;
+        display: block;
+    }
+    #header .links a {
+        padding: 5px 8px;
+    }
+    #header .name {
+        display: block;
+        text-align: center;
+    }
+    
+    main {
+        margin-top: 110px;
+    }
 }
 
 /* scroll bar */
