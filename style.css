@@ -118,9 +118,11 @@ main {
     margin-top: 60px;
     min-height: 100vh;
 }
+
 main div a {
     color: #e37302;
 }
+
 main div {
     background: #0b091c;
     border-radius: 8px;
