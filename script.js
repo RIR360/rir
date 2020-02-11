@@ -11,7 +11,7 @@ function getMeta(metaName) {
     return '';
 }
 // set active header links
-const headLinks = qsa("#header-links li");
+const headLinks = qsa("#header .links li a");
 
 headLinks.forEach(e=>{
     if (e.innerText == getMeta("page-name")) {
