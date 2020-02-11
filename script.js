@@ -15,7 +15,7 @@ const headLinks = qsa("#header-links li");
 
 headLinks.forEach(e=>{
     if (e.innerText == getMeta("page-name")) {
-        e.setAttribute("class", "active");
+        e.setAttribute("class", "active-nav");
         e.parentElement.setAttribute("href", "#");
     }
 });
