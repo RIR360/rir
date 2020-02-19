@@ -62,27 +62,27 @@ body {
 }
 #header .line div {
   position: absolute;
-  height: 5px;
-  width: 100px;
+  height: 2px;
+  width: 100%;
   border-radius: 10px;
 
 }
 #header .line div:nth-child(1) {
   background: #e37302;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
   animation: line  3s;
-  right: 0px;
 }
 
 @keyframes line {
-  0% {  
+  0% {
   	left:  0%;
  	width: 10%;
+    height: 5px;
   }
   50% {
   	left:  50%;
  	width: 2%;
+    height: 5px;
   }
   95% {
   	left: 0%;
