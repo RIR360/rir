@@ -20,6 +20,7 @@ body {
   width: 100%;
   top: 0;
   animation: fadein ease-out 0.3s;
+  z-index: 100;
 }
 #header * {
   transition: ease all 0.3s;
