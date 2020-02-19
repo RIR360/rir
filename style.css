@@ -70,13 +70,9 @@ body {
 #header .line div:nth-child(1) {
   background: #e37302;
   animation-timing-function: ease-in-out;
-  animation: line infinite 3s;
+  animation-fill-mode: forwards;
+  animation: line  3s;
   right: 0px;
-}
-#header .line div:nth-child(2) {
-  background: #e37302;
-  animation-timing-function: ease-in-out;
-  animation: line infinite 5s;
 }
 
 @keyframes line {
@@ -86,11 +82,16 @@ body {
   }
   50% {
   	left:  50%;
- 	width: 50%;
+ 	width: 2%;
+  }
+  95% {
+  	left: 0%;
+ 	width: 100%;
   }
   100% {
+    height: 2px;
   	left: 0%;
- 	width: 10%;
+ 	width: 100%;
   }
 }
 
