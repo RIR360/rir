@@ -10,7 +10,6 @@ document.write(`
 	  </ul>
 	<div class="line">
 		<div></div>
-		<div></div>	
 	</div>
 	</div>
 `);
